@@ -110,11 +110,16 @@ if [[ ${current_lists_count} -gt 0 ]]; then
             "remove": $remove_items
         }')
 
+        # Write payload to file to prevent Argument list too long error
+        echo "$payload" > temp_payload.json
+
         # Patch list
         list=$(curl -sSfL --retry "$MAX_RETRIES" --retry-all-errors -X PATCH "https://api.cloudflare.com/client/v4/accounts/${ACCOUNT_ID}/gateway/lists/${list_id}" \
         -H "Authorization: Bearer ${API_TOKEN}" \
         -H "Content-Type: application/json" \
-        --data "$payload") || error "Failed to patch list ${list_id}"
+        --data @temp_payload.json) || error "Failed to patch list ${list_id}"
+        
+        rm -f temp_payload.json
 
         # Store the list ID
         used_list_ids+=("${list_id}")
@@ -142,11 +147,16 @@ for file in "${chunked_lists[@]}"; do
         "items": $items
     }')
 
+    # Write payload to file
+    echo "$payload" > temp_payload_create.json
+
     # Create list
     list=$(curl -sSfL --retry "$MAX_RETRIES" --retry-all-errors -X POST "https://api.cloudflare.com/client/v4/accounts/${ACCOUNT_ID}/gateway/lists" \
         -H "Authorization: Bearer ${API_TOKEN}" \
         -H "Content-Type: application/json" \
-        --data "$payload") || error "Failed to create list"
+        --data @temp_payload_create.json) || error "Failed to create list"
+        
+    rm -f temp_payload_create.json
 
     # Store the list ID
     used_list_ids+=("$(echo "${list}" | jq -r '.result.id')")
@@ -227,6 +237,9 @@ json_data='{
     "filters":["dns"]
 }'
 
+# Write policy json_data to file to prevent Argument list too long error
+echo "$json_data" > temp_policy.json
+
 [[ -z "${policy_id}" || "${policy_id}" == "null" ]] &&
 {
     # Create the policy
@@ -234,7 +247,7 @@ json_data='{
     curl -sSfL --retry "$MAX_RETRIES" --retry-all-errors -X POST "https://api.cloudflare.com/client/v4/accounts/${ACCOUNT_ID}/gateway/rules" \
         -H "Authorization: Bearer ${API_TOKEN}" \
         -H "Content-Type: application/json" \
-        --data "$json_data" > /dev/null || error "Failed to create policy"
+        --data @temp_policy.json > /dev/null || error "Failed to create policy"
 } ||
 {
     # Update the policy
@@ -242,8 +255,10 @@ json_data='{
     curl -sSfL --retry "$MAX_RETRIES" --retry-all-errors -X PUT "https://api.cloudflare.com/client/v4/accounts/${ACCOUNT_ID}/gateway/rules/${policy_id}" \
         -H "Authorization: Bearer ${API_TOKEN}" \
         -H "Content-Type: application/json" \
-        --data "$json_data" > /dev/null || error "Failed to update policy"
+        --data @temp_policy.json > /dev/null || error "Failed to update policy"
 }
+
+rm -f temp_policy.json
 
 # Delete excess lists in $excess_list_ids
 for list_id in "${excess_list_ids[@]}"; do
