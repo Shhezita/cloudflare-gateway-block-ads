@@ -8,17 +8,18 @@ MAX_LIST_SIZE=1000
 MAX_LISTS=300
 MAX_RETRIES=10
 
+# Set up automatic cleanup on exit
+trap 'rm -f oisd_small_domainswild2.txt.* temp_payload.json temp_payload_create.json temp_policy.json' EXIT
+
 # Define error function
 function error() {
     echo "Error: $1"
-    rm -f oisd_small_domainswild2.txt.*
     exit 1
 }
 
 # Define silent error function
 function silent_error() {
     echo "Silent error: $1"
-    rm -f oisd_small_domainswild2.txt.*
     exit 0
 }
 
@@ -119,7 +120,7 @@ if [[ ${current_lists_count} -gt 0 ]]; then
         -H "Content-Type: application/json" \
         --data @temp_payload.json) || error "Failed to patch list ${list_id}"
         
-        rm -f temp_payload.json
+        sleep 1 # Rate limit protection
 
         # Store the list ID
         used_list_ids+=("${list_id}")
@@ -156,7 +157,7 @@ for file in "${chunked_lists[@]}"; do
         -H "Content-Type: application/json" \
         --data @temp_payload_create.json) || error "Failed to create list"
         
-    rm -f temp_payload_create.json
+    sleep 1 # Rate limit protection
 
     # Store the list ID
     used_list_ids+=("$(echo "${list}" | jq -r '.result.id')")
@@ -266,6 +267,7 @@ for list_id in "${excess_list_ids[@]}"; do
     curl -sSfL --retry "$MAX_RETRIES" --retry-all-errors -X DELETE "https://api.cloudflare.com/client/v4/accounts/${ACCOUNT_ID}/gateway/lists/${list_id}" \
         -H "Authorization: Bearer ${API_TOKEN}" \
         -H "Content-Type: application/json" > /dev/null || error "Failed to delete list ${list_id}"
+    sleep 1 # Rate limit protection
 done
 
 # Add, commit and push the file
