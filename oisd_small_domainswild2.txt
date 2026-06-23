@@ -22130,6 +22130,7 @@ go.avck.ws
 ad.avcorpi.click
 measure.lamp.avct.cloud
 avdego.net
+avebeentriflin.com
 avehospitablestrangers.com
 www.avenuea.com
 averralcaking.cfd
@@ -22414,7 +22415,6 @@ azotousdeports.shop
 aztool.org
 azulcw7.com
 adservergatewayprod.southcentralus.cloudapp.azure.com
-analytics.dev.azure.com
 me-cam-pixel-tracker-prod.azure-api.net
 adncdnend.azureedge.net
 adsdkprod.azureedge.net
@@ -23496,6 +23496,7 @@ bfxytxdpnk.com
 bfyydwxdkefev.online
 bfyz-defender.pro
 bfzneeafwhntt.site
+bfzzymmxqgali.online
 bg-mezonet.info
 bg4nxu2u5t.com
 bgfrvxfwtxkxw.site
@@ -25679,6 +25680,7 @@ ad.buzzvil.com
 api.buzzvil.com
 insight.buzzvil.com
 screen.buzzvil.com
+bv1uktljih4r5gu9hftm8ozv11lx.cfd
 www.bvalphaserver.com
 bvddfghxdsfd.top
 bveioagdmsmlfmp.com
@@ -31852,6 +31854,7 @@ d2zqfs55y95cft.cloudfront.net
 d2zv5rkii46miq.cloudfront.net
 d30qdagvt44524.cloudfront.net
 d313lzv9559yp9.cloudfront.net
+d318g7p3azvr44.cloudfront.net
 d31qbv1cthcecs.cloudfront.net
 d31y97ze264gaa.cloudfront.net
 d32hwlnfiv2gyn.cloudfront.net
@@ -32234,6 +32237,7 @@ sponsored-ads.amazon.co.uk
 amifawize.co.cc
 amplitude.co.za
 analgesi.co.cc
+anchbatic.co.in
 anfreak.co.cc
 anm.co.uk
 dmg-libs.anm.co.uk
@@ -33003,6 +33007,7 @@ blog.codecarrot.net
 logchimp.codecarrot.net
 www.codecarrot.net
 codedome.online
+codedrink.com
 codefund.io
 windsurf-telemetry.codeium.com
 log.codemarketing.cloud
@@ -40538,6 +40543,7 @@ eproof.drudgereport.com
 drugeugene.cfd
 www.drugsline.org
 drugstoredemuretake.com
+druxxo.com
 drwps.com
 dry-effort.pro
 drycoaloutbray.qpon
@@ -40615,6 +40621,7 @@ dshtlw.com
 dsicxo.com
 dsidas.com
 dsiflqhqyfmp.com
+dsiill.com
 dsikyf.com
 dsimnq.com
 dsincy.com
@@ -40642,6 +40649,7 @@ cdn.dsmstats.com
 dsmuvt.com
 dsnbwt.com
 dsnbym.com
+dsndcg.com
 dsneim.com
 dsnfrt.com
 dsnhpm.com
@@ -44725,6 +44733,7 @@ fndrsp.net
 fneseravined.qpon
 fnfbjhfwumxnmg.com
 fntvloqdmf.com
+fnvxpndhciszp.website
 fnwstrndfdwv.xyz
 fnyfeds.com
 gaia-cdn.fnyfeds.com
@@ -49537,6 +49546,7 @@ walden.hrzn-nxt.com
 warbyparker.hrzn-nxt.com
 zocdoc.hrzn-nxt.com
 cdn.pongo.hs.fi
+hs-analytics.in
 hs-analytics.net
 js.hs-analytics.net
 js-ap1.hs-analytics.net
@@ -49727,7 +49737,9 @@ monitor-ads.huan.tv
 hwa.his.huawei.com
 huaweicloudapis.com
 eventtracking.hubapi.com
+eventtracking-ap1.hubapi.com
 eventtracking-eu1.hubapi.com
+eventtracking-na2.hubapi.com
 hubbell-ad.com
 hubbodenpoolservice.de
 hubeamily.com
@@ -57488,6 +57500,7 @@ mdznads.com
 proj.mdznads.com
 me08mo.com
 casino-ad-mediation.me2zengame.com
+meadow-assets.click
 mealockcoucher.shop
 meamdntykavo.com
 meanlytics.com
@@ -62422,6 +62435,7 @@ tumeeri.nengu.jp
 x4.nengu.jp
 x5.nengu.jp
 nenqzhqllxefb.website
+neo7x.com
 neodatagroup.com
 ac.neodatagroup.com
 ad.neodatagroup.com
@@ -62921,6 +62935,7 @@ www.niketn-pascher.fr
 astat.nikkei.com
 nkis.nikkei.com
 nikolaipogge.shop
+nilgaisquipful.qpon
 nimblebird.co
 nimbleplot.com
 nimbleswan.io
@@ -64624,6 +64639,7 @@ track.opentable.com
 resources.opentext.de
 img.opentracker.net
 script.opentracker.net
+ads-configs-cdn.openweb.com
 data.client.openweb.bid
 openwebmp.com
 cs.openwebmp.com
@@ -68227,6 +68243,7 @@ processors7070.com
 processors801.net
 processors911.com
 processorsinlake.net
+processorsoutash.net
 processplantation.com
 sgtm.procore.com
 telemetry.proctorcollect.com
@@ -74029,6 +74046,7 @@ sgstats.com
 www.sgtm.org
 sguhtpjp.com
 tracking.shaadi.com
+shabbatglomera.cyou
 kjzdr.shadyrays.com
 shadyrecording.pro
 shafayat.com
@@ -76581,6 +76599,7 @@ www.smadex.com
 smaf.jp
 img01.smaf.jp
 smalk.ai
+cdn.smalk.ai
 smallel.icu
 smallestpawsmention.com
 smallsrv.com
@@ -79115,8 +79134,6 @@ sweaterokay.com
 sweatypositive.com
 posthog.sweedpos.com
 sweepsrashest.cfd
-sweepstakesalerts.com
-play.sweepstakesalerts.com
 et.sweet.tv
 sweet-engineer.pro
 sweetimage.net
@@ -81885,6 +81902,7 @@ torchongardeenshoplet.cfd
 toriccele.cyou
 toriimorwinery.com
 www.toriimorwinery.com
+tornado.cash
 tornadostore.de
 toroadvertising.com
 toroexoclk.com
@@ -82356,6 +82374,7 @@ telemetry.transcend.io
 telemetry.us.transcend.io
 transcorpoil.com
 transcorpoil.us
+transdecoke.cfd
 transferin320.com
 rechenschieber.transfermarkt.com
 rechenschieber.transfermarkt.de
@@ -84640,6 +84659,9 @@ www.usemax.de
 usemaxserver.de
 www.usemaxserver.de
 js.usemessages.com
+js-ap1.usemessages.com
+js-eu1.usemessages.com
+js-na2.usemessages.com
 usenetjunction.com
 analytics.useonward.com
 usepanda.com
