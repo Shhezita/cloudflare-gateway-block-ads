@@ -24,8 +24,7 @@ function silent_error() {
 }
 
 # Download the latest domains list
-curl -sSfL -A "Mozilla/5.0" --retry 3 --retry-all-errors "https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/hosts/light.txt" | grep -vE '^\s*(#|$)' > oisd_small_domainswild2.txt
-
+curl -sSfL "https://codeberg.org/hagezi/mirror2/raw/branch/main/dns-blocklists/hosts/light.txt" | grep -vE '^\s*(#|$)' > oisd_small_domainswild2.txt
 # Check if the file has changed (only if it exists in git)
 if git ls-files --error-unmatch oisd_small_domainswild2.txt > /dev/null 2>&1; then
     git diff --exit-code oisd_small_domainswild2.txt > /dev/null && silent_error "The domains list has not changed"
